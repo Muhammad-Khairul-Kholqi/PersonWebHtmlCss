@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Nunito+Sans:opsz,wght@6..12,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Nunito+Sans:opsz,wght@6..12,500&family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Nunito+Sans:opsz,wght@6..12,500;6..12,600&family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@600&family=Rajdhani:wght@600&family=Roboto+Slab:wght@500&display=swap');
+
+
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* style bagian navbar dan responsivenya */
+.navbar-logo img {
+    width: 60px;
+}
+
+.ini-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.ini-navbar .navbar-nav-link a {
+    color: #000000;
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Nunito Sans',
+        sans-serif;
+    font-weight: bold;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.navbar-nav-link {
+    margin-top: 5px;
+}
+
+.ini-navbar .navbar-nav-link a:hover {
+    background-color: #0060FF;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.ini-navbar .navbar-nav-link a::after {
+    content: '';
+    display: block;
+    padding-bottom: 3px;
+    background-color: #0060FF;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.ini-navbar .navbar-nav-link a:hover::after {
+    transform: scaleX(0.7);
+}
+
+.ini-navbar .navbar-extra a {
+    color: black;
+    margin: 0 0.5rem;
+}
+
+#hamburger-menu {
+    display: none;
+    width: 30px;
+}
+
+.navbar-extra img {
+    width: 35px;
+}
+
+
+
+@media (max-width: 800px) {
+    .ini-navbar .navbar-nav-link a {
+        margin: 0 0.8rem;
+    }
+}
+
+@media (max-width: 758px) {
+    #hamburger-menu {
+        display: inline-block;
+    }
+
+    .ini-navbar .navbar-nav-link {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #ffffff;
+        width: 16rem;
+        height: 82vh;
+        transition: 0.3s;
+        border-top: 3px solid red;
+        margin-top: -1px;
+    }
+
+    .ini-navbar .navbar-nav-link.active {
+        right: 0;
+    }
+
+    .ini-navbar .navbar-nav-link a {
+        color: black;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 18px;
+    }
+
+    .ini-navbar .navbar-nav-link a::after {
+        transform-origin: 0 0;
+    }
+
+    .ini-navbar .navbar-nav-link a:hover::after {
+        transform: scaleX(0.2);
+    }
+
+    .ini-navbar .navbar-nav-link a:hover {
+        background-color: #0060FF;
+    }
+
+    .ini-navbar .navbar-nav-link a::after {
+        background-color: #0060FF;
+        padding-bottom: 1px;
+    }
+
+    .ini-navbar .navbar-nav-link a:hover {
+        background-color: #0060FF;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+}
+
+
+
+/* contact */
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-top: 65px;
+    background-color: #091D3E;
+    height: 90px;
+    color: #fff;
+    font-family: 'Inter',
+        sans-serif;
+}
+
+.contact p {
+    margin-top: 20px;
+}
+
+.contact a {
+    color: #fff;
+}
+
+.contact a:hover {
+    color: #0060FF;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: default;
+}
+
+.sosmed {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 765px) {
+    .sosmed p {
+        display: none;
+    }
+}
+
+@media (max-width: 645px) {
+    .phone p {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .email p {
+        display: none;
+    }
+}
+
+
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+    background-image: url('img/bg.png');
+    background-size: cover;
+    padding: 40px;
+}
+
+.title h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.title p {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 17px;
+    animation: fadeIn 2s ease-in-out;
+    font-family: 'Nunito Sans',
+    sans-serif;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.title-sosmed {
+    background-color: #FBFBFC;
+    font-family: 'Nunito Sans',
+    sans-serif;
+}
+
+.title-sosmed h1 {
+    font-weight: bold;
+}
+
+.title-info {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.title-info h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #0060FF;
+}
+
+.card-sosmed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.first-card {
+    background-color: #fff;
+    margin: 50px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: default;
+    transition: all 0.3s ease;
+}
+
+.first-card:hover {
+    box-shadow: 1px 1px 30px #F4F5F7;
+    transform: translateY(-10px);
+}
+
+.first-img img {
+    width: 40px;
+    margin: 20px;
+}
+
+.first-title {
+    width: 300px;
+}
+
+.first-title h1 {
+    font-weight: bold;
+    font-size: 25px;
+    color: #201654;
+}

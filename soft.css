@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Slab:wght@500&display=swap');
+.mysoft-skills {
+    text-align: center;
+    background-image: url('img/bg.png');
+    background-size: cover;
+    padding: 50px;
+}
+
+.mysoft-skills h1 {
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 50px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.back p {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.back a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.back a:hover {
+    color: #0060FF;
+}
+
+.card-wrapper-soft {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #E8E8E8;
+}
+
+.wrapper-soft {
+    background-color: #fff;
+    margin: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #ddd;
+    cursor: default;
+    transition: background-color 1s ease, color 1s ease;
+}
+
+.wrapper-soft:hover {
+    background-color: #0A6EBD;
+    color: #fff;
+}
+
+.softss-img img {
+    width: 60px;
+    margin: 30px;
+}
+
+.wrapper-title {
+    width: 300px;
+}
+
+.wrapper-title h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.wrapper-title p {
+    margin: 5px;
+}
+
+.wrapper-title h2 {
+    float: right;
+    font-size: 40px;
+    margin: 5px;
+    font-family: 'Roboto Slab', serif;
+}

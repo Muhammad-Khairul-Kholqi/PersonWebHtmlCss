@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Slab:wght@500&display=swap');
+.myhard-skills {
+    text-align: center;
+    background-image: url('img/bg.png');
+    background-size: cover;
+    padding: 50px;
+}
+
+.myhard-skills h1 {
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 50px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.back-kembali {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.back-kembali p {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.back-kembali a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.back-kembali a:hover {
+    color: #0060FF;
+}
+
+.hard-skills-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #E8E8E8;
+}
+
+.kemampuan-card {
+    background-color: #fff;
+    margin: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #ddd;
+    transition: background-color 0.5s ease;
+    cursor: default;
+    transition: all 0.3s ease;
+}
+
+.kemampuan-card:hover {
+    transform: translateY(-10px);
+    background-color: #0A6EBD;
+    color: #fff;
+}
+
+
+.hardd-img img {
+    width: 60px;
+    margin: 30px;
+}
+
+.wrapper-title-hardd {
+    width: 300px;
+}
+
+.wrapper-title-hardd h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.wrapper-title-hardd p {
+    margin: 5px;
+}
+
+.wrapper-title-hardd h2 {
+    float: right;
+    font-size: 40px;
+    margin: 5px;
+    font-family: 'Roboto Slab', serif;
+}

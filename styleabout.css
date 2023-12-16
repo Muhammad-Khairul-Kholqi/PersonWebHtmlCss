@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Nunito+Sans:opsz,wght@6..12,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Nunito+Sans:opsz,wght@6..12,500&family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Nunito+Sans:opsz,wght@6..12,500;6..12,600&family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@600&family=Rajdhani:wght@600&family=Roboto+Slab:wght@500&display=swap');
+
+
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* style bagian navbar dan responsivenya */
+.navbar-logo img {
+    width: 60px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-nav-link a {
+    color: #000000;
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Nunito Sans',
+        sans-serif;
+    font-weight: bold;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.navbar-nav-link {
+    margin-top: 5px;
+}
+
+.navbar .navbar-nav-link a:hover {
+    background-color: #0060FF;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.navbar .navbar-nav-link a::after {
+    content: '';
+    display: block;
+    padding-bottom: 3px;
+    background-color: #0060FF;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav-link a:hover::after {
+    transform: scaleX(0.7);
+}
+
+.navbar .navbar-extra a {
+    color: black;
+    margin: 0 0.5rem;
+}
+
+#hamburger-menu {
+    display: none;
+    width: 30px;
+}
+
+.navbar-extra img {
+    width: 35px;
+}
+
+
+
+@media (max-width: 800px) {
+    .navbar .navbar-nav-link a {
+        margin: 0 0.8rem;
+    }
+}
+
+@media (max-width: 758px) {
+    #hamburger-menu {
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav-link {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #ffffff;
+        width: 16rem;
+        height: 82vh;
+        transition: 0.3s;
+        border-top: 3px solid red;
+        margin-top: -1px;
+    }
+
+    .navbar .navbar-nav-link.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav-link a {
+        color: black;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 18px;
+    }
+
+    .navbar .navbar-nav-link a::after {
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-nav-link a:hover::after {
+        transform: scaleX(0.2);
+    }
+
+    .navbar .navbar-nav-link a:hover {
+        background-color: #0060FF;
+    }
+
+    .navbar .navbar-nav-link a::after {
+        background-color: #0060FF;
+        padding-bottom: 1px;
+    }
+
+    .navbar .navbar-nav-link a:hover {
+        background-color: #0060FF;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+}
+
+
+
+/* contact */
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-top: 65px;
+    background-color: #091D3E;
+    height: 90px;
+    color: #fff;
+    font-family: 'Inter',
+        sans-serif;
+}
+
+.contact a {
+    color: #fff;
+}
+
+.contact a:hover {
+    color: #0060FF;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: default;
+}
+
+.sosmed {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 765px) {
+    .sosmed p {
+        display: none;
+    }
+}
+
+@media (max-width: 645px) {
+    .phone p {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .email p {
+        display: none;
+    }
+}
+
+
+/* about */
+.title-ket {
+    text-align: center;
+    margin-top: 50px;
+    background-image: url('img/bg.png');
+    background-size: cover;
+    padding: 40px;
+    color: #fff;
+}
+
+.title-ket h1 {
+    font-family: 'Roboto Slab',
+    serif;
+    font-size: 40px;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.title-ket p {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 17px;
+    font-family: 'Nunito Sans',
+    sans-serif;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.container-about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding: 1px 5%;
+    margin-bottom: 100px;
+}
+
+.container-about img {
+    width: 400px;
+}
+
+.about-kanan {
+    margin-top: 70px;
+}
+
+.about-kanan h2 {
+    color: #0087F4;
+    font-weight: bold;
+    font-family: 'Roboto Slab',
+        serif;
+}
+
+.about-kanan p {
+    font-family: 'Nunito Sans',
+    sans-serif;
+}
